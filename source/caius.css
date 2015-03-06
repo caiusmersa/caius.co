@@ -26,20 +26,24 @@ small {
 a:visited {color: #AB6E4A;}
 a:link{color: #CDA38F;}
 a:hover{color: #DB6E35;}
+a:active{color: #EC7F46;}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+}
 
 h1 {
   font-size: 32px;
 }
 
 h2 {
-  color: #74BBE9;
   font-size: 28px;
 }
 
 h3 {
   color: #74BBE9;
   font-size: 24px;
-  margin: 0px;
+  margin-top: 25px;
 }
 
 h4 {
@@ -47,8 +51,10 @@ h4 {
 }
 
 div.quote {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 25px;
   width: 600px;
 }
 
