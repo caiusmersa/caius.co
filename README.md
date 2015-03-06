@@ -1,17 +1,5 @@
-# Deployment
+# caius.co
+Hi there, this is a git repo for my website caius.co. Feel free to use any ideas here as a starting point for your own creations! (warning I'm a beginner)
 
-## Dependencies
-### Grunt
-Install grunt.
-http://gruntjs.com/
-
-```
-npm install -g grunt-cli
-```
-
-### Grunt FTP Deploy
-
-```
-npm install grunt-ftp-deploy --save-dev
-```
-
+## Installation
+install node run `npm install`

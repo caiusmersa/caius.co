@@ -1,13 +1,22 @@
-html{
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+html {
+  font-weight: 300;
   font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+b {
+  font-weight: 700;
+  color: #D2D8EC;
 }
 
 body {
   margin-left: 10px;
   margin-right: 10px;
-  color: #C6CBDE  ;
+
+  color: #C6CBDE;
   background-color: #4C554E;
-  font-size: 18px;
 }
 
 small {
@@ -15,8 +24,8 @@ small {
 }
 
 a:visited {color: #AB6E4A;}
-a:active{color: #DB6E35;}
 a:link{color: #CDA38F;}
+a:hover{color: #DB6E35;}
 
 h1 {
   font-size: 32px;
@@ -34,7 +43,7 @@ h3 {
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 21px;
 }
 
 div.quote {
@@ -43,10 +52,9 @@ div.quote {
   width: 600px;
 }
 
-ul{
-  list-style: none;
+ul {
+  list-style: none; /*no bullet points*/
   padding-left: 15px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
