@@ -1,0 +1,52 @@
+html{
+  font-size: 18px;
+}
+
+body {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #C6CBDE  ;
+  background-color: #4C554E;
+  font-size: 18px;
+}
+
+small {
+  font-size: 16px;
+}
+
+a:visited {color: #AB6E4A;}
+a:active{color: #DB6E35;}
+a:link{color: #CDA38F;}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  color: #74BBE9;
+  font-size: 28px;
+}
+
+h3 {
+  color: #74BBE9;
+  font-size: 24px;
+  margin: 0px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+div.quote {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+ul{
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
