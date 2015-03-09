@@ -7,21 +7,23 @@ module.exports = function (grunt) {
       main: {
         files: [
           {expand: true, cwd: "../DragonFractal/", src: ["*.html", "*.js"], dest: 'deploy/pages/'},
+          {expand: true, cwd: "../Lind/deploy", src: "Lind.jar", dest: 'deploy/pages/'},
           {expand: true, cwd: "source/", src: "**", dest: 'deploy/'},
+          {expand: true, cwd: "source/", src: "*.css", dest: 'deploy/pages'},
         ],
       },
     },
     'ftp-deploy': {
       build: {
-          auth: {
-              host: 'counterbeing.com',
-              port: 21,
-              authKey: 'caius.co'
-          },
-          src: 'deploy',
-          dest: 'html',
-          forceVerbose: true,
-          exclusions: ['**/.DS_Store']
+        auth: {
+          host: 'counterbeing.com',
+          port: 21,
+          authKey: 'caius.co'
+        },
+        src: 'deploy',
+        dest: 'html',
+        forceVerbose: true,
+        exclusions: ['**/.DS_Store']
       }
     }
   });
