@@ -22,7 +22,8 @@ small {
 
 a:visited {color: #AB6E4A;}
 a:link{color: #CDA38F;}
-a:hover{color: #DB6E35;}
+a:hover{color: #DB6E35;
+        outline: 0;}
 a:active{color: #EC7F46;}
 
 h1,h2,h3,h4,h5,h6 {
