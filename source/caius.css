@@ -5,12 +5,10 @@ html {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
 }
-
 b {
   font-weight: 700;
   color: #D2D8EC;
 }
-
 body {
   margin-left: 10px;
   margin-right: 10px;
@@ -18,7 +16,6 @@ body {
   color: #C6CBDE;
   background-color: #4C554E;
 }
-
 small {
   font-size: 16px;
 }
@@ -31,25 +28,20 @@ a:active{color: #EC7F46;}
 h1,h2,h3,h4,h5,h6 {
   font-weight: bold;
 }
-
 h1 {
   font-size: 32px;
 }
-
 h2 {
   font-size: 28px;
 }
-
 h3 {
   color: #74BBE9;
   font-size: 24px;
   margin-top: 25px;
 }
-
 h4 {
   font-size: 21px;
 }
-
 div.quote {
   text-align: center;
   margin-left: auto;
@@ -57,10 +49,12 @@ div.quote {
   margin-bottom: 25px;
   width: 600px;
 }
-
 ul {
   list-style: none; /*no bullet points*/
   padding-left: 15px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+footer {
+  margin-top: 60px
 }
