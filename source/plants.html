@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>caius.co - Botany Notes</title>
+
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="caius.css" type="text/css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Anonymous+Pro:700' type='text/css'>
+
+    <style type="text/css">
+      ul {
+        list-style-type: circle;
+        list-style-position: inside;
+      }
+      .family, td {
+        margin: 3px;
+        padding: 8px;
+        border: 1px solid #CDA38F;
+        background-color: #5D665F;
+        color: #CDA38F;
+      }
+      td.category {
+        text-align: center;
+        vertical-align: middle;
+        width: 200px;
+      }
+      td.quicky {
+        text-align: center;
+        width: 400px;
+      }
+      td.text {
+        text-align: left;
+        width: 400px;
+      }
+
+      /* The stuff between here is for the expanding / collapsing of lists */
+      .row  { vertical-align: top; height: auto !important; }
+      .list { display: none; }
+      .show { display: none; }
+      .hide:target + .show { display: inline; }
+      .hide:target { display: none; }
+      .hide:target ~ .list { display: inline; }
+      @media print { .hide, .show { display: none; } }
+      /* The stuff between here is for the expanding / collapsing of lists */
+    </style>
+
+    <!-- // <script src="scripts/listCollapse.js" type="text/javascript" language="javascript1.2"></script> -->
+  </head>
+  <body>
+    <h3>Families of Flowering Plants (angiosperms)</h3>
+
+    <div class="row">
+      <a href="#hideAnac" class="hide" id="hideAnac"><h4>+ Anacardiaceae</h4></a>
+      <a href="#showAnac" class="show" id="showAnac"><h4>- Anacardiaceae</h4></a>
+      <div class="list">
+        <ul>
+          <table class="family">
+            <tr>
+              <td class="category"><b>usually called?</b></td>
+              <td class="quicky">Cashew / sumac family</td>
+            </tr>
+            <tr>
+              <td class="category"><b>how many?</b></td>
+              <td class="quicky">70 genera<br>650 species</td>
+            <tr>
+            <tr>
+              <td class="category"><b>how do we tell?</b></td>
+              <td class="text"></td>
+          </table>
+          <li>
+<!--             <a href="https://en.wikipedia.org/wiki/Schinus_molle">Schninus molle - pepper tree</a>-->
+            <a href="#hideSchinus_molle" class="hide2" id="hideSchinus_molle">+ Schinus molle</a> (pepper tree)
+            <a href="#showSchinus_molle" class="show2" id="showSchinus_molle">- Schinus molle</a> (pepper tree)
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Toxicodendron_diversilobum">Toxicodendron diversilobum - poison oak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <a href="#hideMagnol" class="hide" id="hideMagnol"><h4>+ Magnoliaceae</h4></a>
+      <a href="#showMagnol" class="show" id="showMagnol"><h4>- Magnoliaceae</h4></a>
+      <div class="list">
+        <ul>
+          <table class="family">
+            <tr>
+              <td class="category"><b>usually called?</b></td>
+              <td class="quicky">Magnolia family</td>
+            </tr>
+            <tr>
+              <td class="category"><b>how many?</b></td>
+              <td class="quicky">7 genera<br>219 species</td>
+            <tr>
+            <tr>
+              <td class="category"><b>how do we tell?</b></td>
+              <td class="text">The leaves are simple and their placement alternates on the stem; the flowers are pretty and arranged singly, not in clusters. This family of plants is known for having their sexual parts arranged in a spiral on a cone-shaped base, like the scales wind up a pine cone. Excepting the two tulip trees, this family is pollinated by beetles.
+          </table>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Magnolia_grandiflora">Magnolia grandiflora - Southern magnolia / bull bay</a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Liriodendron_tulipifera">Liriodendron tulipifera - American tuliptree</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>

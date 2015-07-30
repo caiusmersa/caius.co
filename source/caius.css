@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
+a:visited {color: #AB6E4A;}
+a:link{color: #CDA38F;}
+a:hover{color: #DB6E35;
+        outline: 0;}
+a:active{color: #EC7F46;}
+
 html {
   font-weight: 300;
   font-size: 18px;
@@ -19,12 +25,6 @@ body {
 small {
   font-size: 16px;
 }
-
-a:visited {color: #AB6E4A;}
-a:link{color: #CDA38F;}
-a:hover{color: #DB6E35;
-        outline: 0;}
-a:active{color: #EC7F46;}
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: bold;
