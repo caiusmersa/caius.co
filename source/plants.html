@@ -9,17 +9,37 @@
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Anonymous+Pro:700' type='text/css'>
 
     <style type="text/css">
+      a.homelink {
+        font-size: 24px;
+      }
+
       ul {
-        list-style-type: circle;
+        padding-left: 30px;
+        list-style-type: none;
         list-style-position: inside;
       }
-      .family, td {
+
+      li.family {
+        font-size: 24px;
+      }
+
+      li.plant {
+        font-size: 15px;
+      }
+
+      ul.plant-table {
+        list-style-type: none;
+      }
+
+      table.family, td {
+        font-size: 18px;
         margin: 3px;
         padding: 8px;
         border: 1px solid #CDA38F;
         background-color: #5D665F;
         color: #CDA38F;
       }
+
       td.category {
         text-align: center;
         vertical-align: middle;
@@ -27,84 +47,81 @@
       }
       td.quicky {
         text-align: center;
-        width: 400px;
+        width: 700px;
       }
       td.text {
         text-align: left;
-        width: 400px;
+        width: 700px;
       }
-
-      /* The stuff between here is for the expanding / collapsing of lists */
-      .row  { vertical-align: top; height: auto !important; }
-      .list { display: none; }
-      .show { display: none; }
-      .hide:target + .show { display: inline; }
-      .hide:target { display: none; }
-      .hide:target ~ .list { display: inline; }
-      @media print { .hide, .show { display: none; } }
-      /* The stuff between here is for the expanding / collapsing of lists */
     </style>
 
-    <!-- // <script src="scripts/listCollapse.js" type="text/javascript" language="javascript1.2"></script> -->
+    <script src="scripts/listCollapse.js" type="text/javascript" language="javascript1.2"></script>
   </head>
-  <body>
+
+  <body onload="compactMenu('families',false,'&plusmn; ');">
+    <a class="homelink" href="index.html">< Back</a>
+
     <h3>Families of Flowering Plants (angiosperms)</h3>
 
-    <div class="row">
-      <a href="#hideAnac" class="hide" id="hideAnac"><h4>+ Anacardiaceae</h4></a>
-      <a href="#showAnac" class="show" id="showAnac"><h4>- Anacardiaceae</h4></a>
-      <div class="list">
+    <ul id="families">
+      <li class="family">Anacardiaceae
         <ul>
           <table class="family">
             <tr>
               <td class="category"><b>usually called?</b></td>
-              <td class="quicky">Cashew / sumac family</td>
+              <td class="quicky"><a href="https://en.wikipedia.org/wiki/Anacardiaceae">cashew / sumac family</a></td>
             </tr>
             <tr>
               <td class="category"><b>how many?</b></td>
               <td class="quicky">70 genera<br>650 species</td>
-            <tr>
+            </tr>
             <tr>
               <td class="category"><b>how do we tell?</b></td>
-              <td class="text"></td>
+              <td class="text">-resin canals located in the inner fibrous bark</td>
+            </tr>
           </table>
-          <li>
-<!--             <a href="https://en.wikipedia.org/wiki/Schinus_molle">Schninus molle - pepper tree</a>-->
-            <a href="#hideSchinus_molle" class="hide2" id="hideSchinus_molle">+ Schinus molle</a> (pepper tree)
-            <a href="#showSchinus_molle" class="show2" id="showSchinus_molle">- Schinus molle</a> (pepper tree)
+          <li class="plant">pepper tree - Schinus molle
+            <ul class="plant-table">
+              <li><a href="https://en.wikipedia.org/wiki/Schinus_molle">pepper tree - Schinus molle on Wikipedia</a></li>
+              <li><table class="plant">
+                <tr><td class="category"><b>origin?</b></td>
+                    <td class="text">-native to arid areas of Northern South America and Peru's Andean deserts</td></tr>
+                <tr><td class="category"><b>edible / healing?</b></td>
+                    <td class="text">-the pink peppercorns are used in cooking<br>
+                                       -the Inca made a fermented drink from the sweet outer part of the fruit</td></tr>
+                <tr><td class="category"><b>toxic?</b></td>
+                    <td class="text">-fruit and leaves may be toxic to poultry, pigs, and calves</td></tr>
+              </table></li>
+            </ul>
           </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Toxicodendron_diversilobum">Toxicodendron diversilobum - poison oak</a>
-          </li>
+          <li class="plant"><a href="https://en.wikipedia.org/wiki/Toxicodendron_diversilobum">poison oak - Toxicodendron diversilobum</a></li>
         </ul>
-      </div>
-    </div>
-
-    <div class="row">
-      <a href="#hideMagnol" class="hide" id="hideMagnol"><h4>+ Magnoliaceae</h4></a>
-      <a href="#showMagnol" class="show" id="showMagnol"><h4>- Magnoliaceae</h4></a>
-      <div class="list">
+      </li>
+      <li class ="family">Magnoliaceae
         <ul>
           <table class="family">
             <tr>
               <td class="category"><b>usually called?</b></td>
-              <td class="quicky">Magnolia family</td>
+              <td class="quicky">magnolia family</td>
             </tr>
             <tr>
               <td class="category"><b>how many?</b></td>
               <td class="quicky">7 genera<br>219 species</td>
-            <tr>
+            </tr>
             <tr>
               <td class="category"><b>how do we tell?</b></td>
-              <td class="text">The leaves are simple and their placement alternates on the stem; the flowers are pretty and arranged singly, not in clusters. This family of plants is known for having their sexual parts arranged in a spiral on a cone-shaped base, like the scales wind up a pine cone. Excepting the two tulip trees, this family is pollinated by beetles.
+              <td class="text">-leaves are simple and their placement alternates on the stem<br>
+                               -flowers are pretty and arranged singly, not in clusters<br>
+                               -sexual parts are arranged in a spiral on a cone-shaped base, like the scales winding up a pine cone<br>
+                               -pollinated by beetles, except for the two tulip trees</td>
+            </tr>
           </table>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Magnolia_grandiflora">Magnolia grandiflora - Southern magnolia / bull bay</a>
-          </li>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Liriodendron_tulipifera">Liriodendron tulipifera - American tuliptree</a>
-          </li>
+          <li class="plant"><a href="https://en.wikipedia.org/wiki/Magnolia_grandiflora">Magnolia grandiflora - Southern magnolia / bull bay</a></li>
+          <li class="plant"><a href="https://en.wikipedia.org/wiki/Liriodendron_tulipifera">Liriodendron tulipifera - American tuliptree</a></li>
         </ul>
-      </div>
-    </div>
+      </li>
+    </ul>
+
+
   </body>
+</html>
