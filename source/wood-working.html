@@ -13,11 +13,41 @@
         font-size: 24px;
       }
 
+      a.piclink {
+        display: block;
+      }
+
       table, td {
         /*border: 1px black solid;*/
         vertical-align: top;
         padding: 0px;
         margin: 20px;
+      }
+
+      /*The stuff below is for the image hover zoom effect,
+      requires a 'view' div wrapping an image and a mask div*/
+      .view {
+        overflow: hidden;
+        position: relative;
+      }
+      .view .mask, .view .content {
+          width: 400px;
+          height: 1000px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          background-color: rgba(0,0,128, 0.2);
+          transition: all 0.5s ease-in-out;
+      }
+      .view img { /*1*/
+          transition: all 0.3s linear;
+      }
+      .view:hover img {
+          transform: scale(1.18);
+      }
+      .view:hover .mask {
+          opacity: 1;
       }
     </style>
   </head>
@@ -25,22 +55,57 @@
   <body>
   <a class="homelink" href="index.html">< Back</a>
 
-    <div align="center" class="view view-first">
+    <div align="center">
       <h3>Relief carvings</h3>
       <table align="center">
         <tr>
           <td>
-            <img src="images/wood-working/carving_dream-farm1_thumb.jpg" style="float:top"><br>
-            <img src="images/wood-working/carving_seahorse1_thumb.jpg">
+            <a class="piclink" href="images/wood-working/carving_dream-farm1.jpg">
+              <div class="view">
+                <img src="images/wood-working/carving_dream-farm1_thumb.jpg" style="float:top">
+                <div class="mask"></div>
+              </div>
+            </a>
+            <a class="piclink" href="images/wood-working/carving_seahorse1.jpg">
+              <div class="view">
+                <img src="images/wood-working/carving_seahorse1_thumb.jpg" style="float:top">
+                <div class="mask"></div>
+              </div>
+            </a>
           </td>
           <td>
-            <img src="images/wood-working/carving_dream-farm3_thumb.jpg"><br>
-            <img src="images/wood-working/carving_seahorse2_thumb.jpg">
+            <a class="piclink" href="images/wood-working/carving_dream-farm3.jpg">
+              <div class="view">
+                <img src="images/wood-working/carving_dream-farm3_thumb.jpg" style="float:top">
+                <div class="mask"></div>
+              </div>
+            </a>
+            <a class="piclink" href="images/wood-working/carving_seahorse2.jpg">
+              <div class="view">
+                <img src="images/wood-working/carving_seahorse2_thumb.jpg" style="float:top">
+                <div class="mask"></div>
+              </div>
+            </a>
           </td>
           <td>
-            <img src="images/wood-working/carving_dream-farm2_thumb.jpg"><br>
-            <img src="images/wood-working/carving_dream-farm4_thumb.jpg"><br>
-            <img src="images/wood-working/carving_horse_thumb.jpg"><br>
+            <a class="piclink" href="images/wood-working/carving_dream-farm2.jpg">
+              <div class="view">
+                <img src="images/wood-working/carving_dream-farm2_thumb.jpg" style="float:top">
+                <div class="mask"></div>
+              </div>
+            </a>
+            <a class="piclink" href="images/wood-working/carving_dream-farm4.jpg">
+              <div class="view">
+                <img src="images/wood-working/carving_dream-farm4_thumb.jpg" style="float:top">
+                <div class="mask"></div>
+              </div>
+            </a>
+            <a class="piclink" href="images/wood-working/carving_horse.jpg">
+              <div class="view">
+                <img src="images/wood-working/carving_horse_thumb.jpg" style="float:top">
+                <div class="mask"></div>
+              </div>
+            </a>
           </td>
         </tr>
       </table>
