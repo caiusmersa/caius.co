@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>caius.co - Dragon Fractal</title>
+
+		<link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="caius.css" type="text/css">
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Anonymous+Pro:700' type='text/css'>
+		<style>
+			div.main {
+				margin-left: auto;
+				margin-right: auto;
+				width: 980px;
+			}
+			h3 {
+				margin-top: 5px;
+			}
+			div.padder {
+				margin-bottom: 60px;
+			}
+			canvas {
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+			input.iter {
+				border: 1px dotted #CDA38F;
+				background-color: #5D665F;
+				float: right;
+				width: 200px;
+				height: 30px;
+			}
+			input.chk, label.chk {
+				cursor: pointer;
+				border: 1px dotted #CDA38F;
+				background-color: #5D665F;
+				float: left;
+				height: 30px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main">
+			<div class="padder">
+				<h3>A nifty rendering of the dragon curve</h3>
+				<canvas id="pic"
+								width="970" height="600"
+								style="border: 2px dashed #CDA38F"></canvas>
+				<input 	class="chk" type="checkbox" id="color_check"/>
+				<label  class="chk" for="color_check">-random colors-</label>
+				<input 	class="chk" type="checkbox" id="grid_check"/>
+				<label 	class="chk" for="grid_check">-toggle grid-</label>
+				<input	class="iter" id="it_slider" type="range" width="200"
+								min="0" max="18"
+								value="15"/>
+			</div>
+
+			Learn how to
+			<a href="https://en.wikipedia.org/wiki/Dragon_curve#.5BUn.5DFolding_the_Dragon">
+				fold a piece of paper into the dragon curve on Wikipedia.</a>
+		</div>
+
+		<script src="scripts/dragon-fractal.js"></script>
+	</body>
+</html>
